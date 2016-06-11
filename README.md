@@ -17,4 +17,5 @@ II. First boot
    4. A window will appear with a list of different operating systems.
    5. Choose Raspbian and click install, Raspian will install.
    6. When the installation is complete raspi-config will load.
+   7. Set date and time and Finish first boot and installation process.
 
