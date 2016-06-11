@@ -11,9 +11,10 @@ I. Create NOOBS microSD card
    
 II. First boot
 
-   1. Insert the microSD card
+   1. Insert the microSD card.
    2. plug in the Mouse, Keyboard and hdmi.
    3. Plug in the power with microUSB to start the first boot process.
    4. A window will appear with a list of different operating systems.
-   5. Choose Raspbian and click install, Raspian will install
+   5. Choose Raspbian and click install, Raspian will install.
+   6. When the installation is complete raspi-config will load.
 
