@@ -29,9 +29,6 @@ III. Test 1: Using ssh to connect to the Raspberry Pi another computer
 
 IV. Test 2: Setup a web server (following: https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md)
 
-   1. Update Raspberry Pi: sudo apt-get update
+   1. Update Raspberry Pi: sudo apt-get update (will have installed Jessie)
    2. Install apache: sudo apt-get install apache2 -y
    3. If the installation succeeds you can go to: http://192.168.0.104/ and see the default page
-
-
-
