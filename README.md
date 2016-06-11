@@ -9,3 +9,5 @@ Download latest NOOBS zip from https://www.raspberrypi.org/downloads/noobs/
 I used v1.5.0 now here: https://downloads.raspberrypi.org/NOOBS/images/NOOBS-2015-11-24/
 
 2. 
+
+
