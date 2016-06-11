@@ -31,4 +31,5 @@ IV. Test 2: Setup a web server (following: https://www.raspberrypi.org/documenta
 
    1. Update Raspberry Pi: sudo apt-get update (will have installed Jessie)
    2. Install apache: sudo apt-get install apache2 -y
-   3. If the installation succeeds you can go to: http://192.168.0.104/ and see the default page
+   3. If the installation succeeds you can go to: http://192.168.0.104/ and see the default apache page
+   4. Install php: sudo apt-get install php5 libapache2-mod-php5 -y
