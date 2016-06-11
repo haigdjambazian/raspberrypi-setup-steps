@@ -19,7 +19,13 @@ II. First boot
    6. When the installation is complete click "ok".
    7. Raspian GUI will start.
 
-III. Shutdown
+III. Test 1: Using ssh to connect to the Raspberry Pi from outside
 
-   1. Meny > Shutdown.
-   2. Disconnect unit.
+   1. Start a Raspberry Pi terminal
+   2. type ifconfig
+   3. Note the "inet addr" value
+   4. From external computer run ssh -l pi x.x.x.x and enter the Raspberry Py password
+
+IV. Test 2:
+
+
