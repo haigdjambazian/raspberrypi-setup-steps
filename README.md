@@ -4,12 +4,14 @@ Raspberry Pi  - Initial setup and testing
 Raspberry Pi 2 Model B
 
 I. Create NOOBS microSD card
+============================
 
    1. Get latest NOOBS (Not NOOBS Lite) from: https://www.raspberrypi.org/downloads/noobs/, I used v1.5.0, archived here: https://downloads.raspberrypi.org/NOOBS/images/NOOBS-2015-11-24/
    2. Unzip the NOOBS zip file
    3. Copy the folder to the microSD card (used an microSD to SD adapter).
    
 II. First boot
+==============
 
    1. Insert the microSD card.
    2. plug in the Mouse, Keyboard and hdmi.
@@ -20,6 +22,7 @@ II. First boot
    7. Raspian GUI will start.
 
 III. Test 1: Using ssh to connect to the Raspberry Pi another computer
+======================================================================
 
    1. Start a Raspberry Pi terminal
    2. type ifconfig
@@ -27,8 +30,10 @@ III. Test 1: Using ssh to connect to the Raspberry Pi another computer
    4. From external computer run ssh -l pi 192.168.0.104
    5. Enter the Raspberry Py password
 
-IV. Test 2: Setup a web server (following: https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md)
-
+IV. Test 2: Setup a web server
+==============================
+(following: https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md)
+ 
    1. Update Raspberry Pi: sudo apt-get update (will have installed Jessie)
    2. Install apache: sudo apt-get install apache2 -y
    3. If the installation succeeds you can go to: http://192.168.0.104/ and see the default apache page
@@ -40,6 +45,8 @@ IV. Test 2: Setup a web server (following: https://www.raspberrypi.org/documenta
    9. Go to http://192.168.0.104/
 
 V. Test 3: use php
+==================
+
    1. Install php: sudo apt-get install php5 libapache2-mod-php5 -y
    2. Repace the index.html with index.php:
    3. cd /var/www/html/
