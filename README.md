@@ -42,7 +42,7 @@ IV. Test 2: Setup a web server
  
    1. Update Raspberry Pi:
 ```
-# It will have installed Jessie
+# It will install Jessie over v1.5.0
 sudo apt-get update 
 ```
    2. Install apache:
