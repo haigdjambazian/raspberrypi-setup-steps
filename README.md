@@ -38,7 +38,7 @@ IV. Test 2: Setup a web server (following: https://www.raspberrypi.org/documenta
             printf "<html>\n<head></head>\n<body>Hello World - Haig</body>\n</html>\n" > /tmp/index.html
             sudo mv /tmp/index.html .
             Go to http://192.168.0.104/
-5. Install php: sudo apt-get install php5 libapache2-mod-php5 -y
+   5. Install php: sudo apt-get install php5 libapache2-mod-php5 -y
    6. Repace the index.html with index.php:
             cd /var/www/html/
             sudo mv index.html index.html.helloworld
