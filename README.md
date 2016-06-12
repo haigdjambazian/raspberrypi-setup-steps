@@ -11,6 +11,7 @@ I. Create NOOBS microSD card
       I used v1.5.0, archived here: https://downloads.raspberrypi.org/NOOBS/images/NOOBS-2015-11-24/
    2. Unzip the NOOBS zip file
    3. Copy the folder to the microSD card (used an microSD to SD adapter).
+   
 II. First boot
 --------------
 
@@ -21,6 +22,7 @@ II. First boot
    5. Choose Raspbian and click install, Raspian will install.
    6. When the installation is complete click "ok".
    7. Raspian GUI will start.
+   
 III. Test 1: Using ssh to connect
 ---------------------------------
 
@@ -59,6 +61,7 @@ printf "<html>\n<head></head>\n<body>Hello World - Haig</body>\n</html>\n" > /tm
 sudo mv /tmp/index.html .
 ```
    5. Visit http://192.168.0.104/
+
 V. Test 3: use php with the webserver
 -------------------------------------
 
@@ -74,3 +77,4 @@ printf '<!DOCTYPE html>\n<html>\n<body>\n<?php echo "My first PHP script!"; ?><b
 sudo mv /tmp/index.php .
 ```
    3. Visit http://192.168.0.104/
+
