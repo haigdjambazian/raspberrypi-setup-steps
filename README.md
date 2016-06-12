@@ -55,10 +55,10 @@ following: https://www.raspberrypi.org/documentation/remote-access/web-server/ap
    3. If the installation succeeds you can go to: http://192.168.0.104/ and see the default apache page
    4. Repace the index.html: 
       ```
-      cd /var/www/html/
-      sudo mv index.html index.html.apache
-      printf "<html>\n<head></head>\n<body>Hello World - Haig</body>\n</html>\n" > /tmp/index.html
-      sudo mv /tmp/index.html .
+cd /var/www/html/
+sudo mv index.html index.html.apache
+printf "<html>\n<head></head>\n<body>Hello World - Haig</body>\n</html>\n" > /tmp/index.html
+sudo mv /tmp/index.html .
       ```
    5. Visit http://192.168.0.104/
 
