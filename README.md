@@ -81,5 +81,5 @@ sudo mv /tmp/index.php .
 Test 4: Try using game emulator
 -------------------------------
 
-* download RetroPie 2/3 from: https://retropie.org.uk/download/
+* download RetroPie 2/3 from: https://retropie.org.uk/download/  
 Following steps here to use a Raspberry Pi image: https://www.raspberrypi.org/documentation/installation/installing-images/mac.md
