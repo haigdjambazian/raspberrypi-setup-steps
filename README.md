@@ -5,12 +5,14 @@ Using: Raspberry Pi 2 Model B
 
 I. Create NOOBS microSD card
 ============================
+
    1. Get latest NOOBS (Not NOOBS Lite) from: https://www.raspberrypi.org/downloads/noobs/
       I used v1.5.0, archived here: https://downloads.raspberrypi.org/NOOBS/images/NOOBS-2015-11-24/
    2. Unzip the NOOBS zip file
    3. Copy the folder to the microSD card (used an microSD to SD adapter).
 II. First boot
 ==============
+
    1. Insert the microSD card.
    2. plug in the Mouse, Keyboard and hdmi.
    3. Plug in the power with microUSB to start the first boot process.
@@ -20,6 +22,7 @@ II. First boot
    7. Raspian GUI will start.
 III. Test 1: Using ssh to connect
 =================================
+
    1. Start a Raspberry Pi terminal
    2. Run
 ```
@@ -34,6 +37,7 @@ ssh -l pi 192.168.0.104
 
 IV. Test 2: Setup a web server
 ==============================
+
 following: https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md
    1. Update Raspberry Pi:
 ```
@@ -55,6 +59,7 @@ sudo mv /tmp/index.html .
    5. Visit http://192.168.0.104/
 V. Test 3: use php with the webserver
 =====================================
+
    1. Install php:
 ```
 sudo apt-get install php5 libapache2-mod-php5 -y
