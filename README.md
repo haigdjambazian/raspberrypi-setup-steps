@@ -4,7 +4,7 @@ Raspberry Pi  - Initial setup and testing
 
 Using: Raspberry Pi 2 Model B
 
-1. Create NOOBS microSD card
+Create NOOBS microSD card
 ----------------------------
 
 * Get latest NOOBS (Not NOOBS Lite) from: https://www.raspberrypi.org/downloads/noobs/  
@@ -12,7 +12,7 @@ I used v1.5.0, archived here: https://downloads.raspberrypi.org/NOOBS/images/NOO
 * Unzip the NOOBS zip file.
 * Copy the folder to the microSD card (used an microSD to SD adapter).
 
-2. First boot
+First boot
 --------------
 
 * Insert the microSD card.
@@ -23,7 +23,7 @@ I used v1.5.0, archived here: https://downloads.raspberrypi.org/NOOBS/images/NOO
 * When the installation is complete click "ok".
 * Raspian GUI will start.
 
-3. Test 1: Using ssh to connect
+Test 1: Using ssh to connect
 ---------------------------------
 
 * Start a Raspberry Pi terminal
@@ -38,7 +38,7 @@ ssh -l pi 192.168.0.104
 ```
 * Enter the Raspberry Py password
 
-4. Test 2: Setup a web server
+Test 2: Setup a web server
 ------------------------------
 
 following: https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md
@@ -62,7 +62,7 @@ sudo mv /tmp/index.html .
 ```
 * Visit http://192.168.0.104/
 
-5. Test 3: use php with the web server
+Test 3: use php with the web server
 --------------------------------------
 
 * Install php:
@@ -77,3 +77,9 @@ printf '<!DOCTYPE html>\n<html>\n<body>\n<?php echo "My first PHP script!"; ?><b
 sudo mv /tmp/index.php .
 ```
 * Visit http://192.168.0.104/
+
+Test 4: Try using game emulator
+-------------------------------
+
+* download RetroPie from: https://retropie.org.uk/download/
+* 
