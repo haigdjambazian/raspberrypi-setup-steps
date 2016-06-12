@@ -38,10 +38,10 @@ IV. Test 2: Setup a web server
    2. Install apache: sudo apt-get install apache2 -y
    3. If the installation succeeds you can go to: http://192.168.0.104/ and see the default apache page
    4. Repace the index.html: 
-> cd /var/www/html/
-> sudo mv index.html index.html.apache
-> printf "<html>\n<head></head>\n<body>Hello World - Haig</body>\n</html>\n" > /tmp/index.html
-> sudo mv /tmp/index.html .
+`cd /var/www/html/`
+`sudo mv index.html index.html.apache`
+`printf "<html>\n<head></head>\n<body>Hello World - Haig</body>\n</html>\n" > /tmp/index.html`
+`sudo mv /tmp/index.html .`
    5. Visit http://192.168.0.104/
 
 V. Test 3: use php
@@ -49,9 +49,9 @@ V. Test 3: use php
 
    1. Install php: sudo apt-get install php5 libapache2-mod-php5 -y
    2. Repace the index.html with index.php:
-> cd /var/www/html/
-> sudo mv index.html index.html.helloworld
-> printf '<!DOCTYPE html>\n<html>\n<body>\n<?php echo "My first PHP script!"; ?><br>\n<?php echo date("Y-m-d H:i:s"); ?><br>\n<?php phpinfo(); ?>\n</body>\n</html>' > /tmp/index.php
-> sudo mv /tmp/index.php .
+`cd /var/www/html/`
+`sudo mv index.html index.html.helloworld`
+`printf '<!DOCTYPE html>\n<html>\n<body>\n<?php echo "My first PHP script!"; ?><br>\n<?php echo date("Y-m-d H:i:s"); ?><br>\n<?php phpinfo(); ?>\n</body>\n</html>' > /tmp/index.php`
+`sudo mv /tmp/index.php .`
    3. Visit http://192.168.0.104/
 
