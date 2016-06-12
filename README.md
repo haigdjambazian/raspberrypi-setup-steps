@@ -33,15 +33,18 @@ IV. Test 2: Setup a web server (following: https://www.raspberrypi.org/documenta
    2. Install apache: sudo apt-get install apache2 -y
    3. If the installation succeeds you can go to: http://192.168.0.104/ and see the default apache page
    4. Repace the index.html: 
-      a. cd /var/www/html/
-      b. sudo mv index.html index.html.apache
-      c. printf "<html>\n<head></head>\n<body>Hello World - Haig</body>\n</html>\n" > /tmp/index.html
-      d. sudo mv /tmp/index.html .
-      e. Go to http://192.168.0.104/
-   5. Install php: sudo apt-get install php5 libapache2-mod-php5 -y
-   6. Repace the index.html with index.php:
-      a. cd /var/www/html/
-      b. sudo mv index.html index.html.helloworld
-      c. printf '<!DOCTYPE html>\n<html>\n<body>\n<?php echo "My first PHP script!"; ?><br>\n<?php echo date("Y-m-d H:i:s"); ?><br>\n<?php phpinfo(); ?>\n</body>\n</html>' > /tmp/index.php
-      d. sudo mv /tmp/index.php .
-      e. Go to http://192.168.0.104/
+   5. cd /var/www/html/
+   6. sudo mv index.html index.html.apache
+   7. printf "<html>\n<head></head>\n<body>Hello World - Haig</body>\n</html>\n" > /tmp/index.html
+   8. sudo mv /tmp/index.html .
+   9. Go to http://192.168.0.104/
+
+V. Test 3: use php
+   1. Install php: sudo apt-get install php5 libapache2-mod-php5 -y
+   2. Repace the index.html with index.php:
+   3. cd /var/www/html/
+   4. sudo mv index.html index.html.helloworld
+   5. printf '<!DOCTYPE html>\n<html>\n<body>\n<?php echo "My first PHP script!"; ?><br>\n<?php echo date("Y-m-d H:i:s"); ?><br>\n<?php phpinfo(); ?>\n</body>\n</html>' > /tmp/index.php
+   6. sudo mv /tmp/index.php .
+   7. Go to http://192.168.0.104/
+
