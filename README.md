@@ -62,8 +62,8 @@ sudo mv /tmp/index.html .
 ```
 * Visit http://192.168.0.104/
 
-5. Test 3: use php with the webserver
--------------------------------------
+5. Test 3: use php with the web server
+--------------------------------------
 
 * Install php:
 ```
