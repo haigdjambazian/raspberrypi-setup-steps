@@ -2,7 +2,7 @@
 Raspberry Pi  - Initial setup and testing
 =========================================
 
-Using: Raspberry Pi 2 Model B
+Using: Raspberry Pi 2 Model B, MacBook Air (13-inch, Late 2010)
 
 Create NOOBS microSD card
 ----------------------------
@@ -83,3 +83,22 @@ Test 4: Try using game emulator
 
 * download RetroPie 2/3 from: https://retropie.org.uk/download/  
 Following steps here to use a Raspberry Pi image: https://www.raspberrypi.org/documentation/installation/installing-images/mac.md
+* cd to directory and run:
+```
+gunzip retropie-v3.8.1-rpi2_rpi3.img.gz 
+```
+* Insert microSD with adapter
+* Go to: Apple Menu > About This Mac > System Report > USB > USB Hi-Speed Bus
+* Note the name: BSD Name:	disk2s1 (note disk2, not disk2s1)
+* With Disk Utility unmount disk (do not eject)
+* Run:
+```
+sudo dd bs=1m if=retropie-v3.8.1-rpi2_rpi3.img of=/dev/rdisk2
+```
+* You should see displayed:
+```
+2670+1 records in
+2670+1 records out
+2800000000 bytes transferred in 604.781820 secs (4629769 bytes/sec)
+```
+
