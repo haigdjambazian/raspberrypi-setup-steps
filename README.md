@@ -9,7 +9,7 @@ Using: Raspberry Pi 2 Model B
 
 * Get latest NOOBS (Not NOOBS Lite) from: https://www.raspberrypi.org/downloads/noobs/  
 I used v1.5.0, archived here: https://downloads.raspberrypi.org/NOOBS/images/NOOBS-2015-11-24/
-* Unzip the NOOBS zip file
+* Unzip the NOOBS zip file.
 * Copy the folder to the microSD card (used an microSD to SD adapter).
 
 2. First boot
