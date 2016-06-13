@@ -87,7 +87,7 @@ Following steps here to use a Raspberry Pi image: https://www.raspberrypi.org/do
 ```
 gunzip retropie-v3.8.1-rpi2_rpi3.img.gz 
 ```
-* Insert microSD with adapter
+* Insert new microSD with adapter
 * Go to: Apple Menu > About This Mac > System Report > USB > USB Hi-Speed Bus
 * Note the name: BSD Name:	disk2s1 (note disk2, not disk2s1)
 * With Disk Utility unmount disk (do not eject)
@@ -101,4 +101,8 @@ sudo dd bs=1m if=retropie-v3.8.1-rpi2_rpi3.img of=/dev/rdisk2
 2670+1 records out
 2800000000 bytes transferred in 604.781820 secs (4629769 bytes/sec)
 ```
-
+* Insert microUSB in Raspberry Pi and boot
+* Create a retropie folder in a USB key and insert in Raspberry Pi, remove after blinking  
+https://github.com/RetroPie/RetroPie-Setup/wiki/MAME  
+* Place rom (galaga88.zip) in roms/advmames subfolder   
+* Play MAME>galaga88 
