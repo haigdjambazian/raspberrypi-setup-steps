@@ -104,5 +104,5 @@ sudo dd bs=1m if=retropie-v3.8.1-rpi2_rpi3.img of=/dev/rdisk2
 * Insert microUSB in Raspberry Pi and boot
 * Create a retropie folder in a USB key and insert in Raspberry Pi, remove after blinking  
 https://github.com/RetroPie/RetroPie-Setup/wiki/MAME  
-* Place rom (galaga88.zip) in roms/advmames subfolder   
+* Place rom (galaga88.zip) in retropie/roms/advmames subfolder   
 * Play MAME>galaga88 
