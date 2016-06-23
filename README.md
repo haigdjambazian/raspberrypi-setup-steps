@@ -142,6 +142,10 @@ Installing RPi Camera
 sudo raspi-config
 ```
 * Select enable camera and hit Enter, Finish and it will reboot.
+* Show options
+```
+raspistill 2>&1 | less
+```
 * Capture a photo
 ```
 raspistill -o cam.jpg
