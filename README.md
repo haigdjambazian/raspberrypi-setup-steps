@@ -153,6 +153,19 @@ raspistill -o cam.jpg
 DATE=$(date +"%Y-%m-%d_%H%M")
 raspistill --nopreview  -h 194 -w 259 -o /home/pi/camera/$DATE.jpg
 ```
+* setup cron job
+```
+crontab -e
+```
+* Put this text in the file with nano, the cron job will start
+```
+* * * * * /home/pi/camera.sh 2>&1
+```
+* Alternatively these make videos
+```
+raspivid -o vid.h264 --timeout 5000
+raspivid -o vid.mpeg --timeout 5000 --codec MJPEG
+```
 
 Install web server
 ------------------
