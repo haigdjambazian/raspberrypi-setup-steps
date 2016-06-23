@@ -146,9 +146,12 @@ sudo raspi-config
 ```
 raspistill 2>&1 | less
 ```
-* Capture a photo
+* Capture a photo (max size is 2592 x 1944)
 ```
 raspistill -o cam.jpg
+
+DATE=$(date +"%Y-%m-%d_%H%M")
+raspistill --nopreview  -h 194 -w 259 -o /home/pi/camera/$DATE.jpg
 ```
 
 Install web server
