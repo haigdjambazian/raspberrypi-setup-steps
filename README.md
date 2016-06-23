@@ -1,4 +1,4 @@
-# raspberrypi-setup-steps
+# raspberrypi 2 setup and tests steps
 Raspberry Pi  - Initial setup and testing
 =========================================
 
