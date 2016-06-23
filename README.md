@@ -106,3 +106,34 @@ sudo dd bs=1m if=retropie-v3.8.1-rpi2_rpi3.img of=/dev/rdisk2
 https://github.com/RetroPie/RetroPie-Setup/wiki/MAME  
 * Place rom (galaga88.zip) in retropie/roms/advmames subfolder   
 * Play MAME>galaga88 
+
+# raspberrypi 3 setup and tests
+Raspberry Pi  - Initial setup and testing
+=========================================
+
+Using: Raspberry Pi 3 Model B, MacBook Air (13-inch, Late 2010)
+
+Create NOOBS microSD card
+----------------------------
+
+* Get latest NOOBS (NOOBS Lite) from: https://www.raspberrypi.org/downloads/noobs/  
+I used NOOBS_lite_v1_9.zip, (old versions archived here: https://downloads.raspberrypi.org/NOOBS/images/)
+* Unzip the NOOBS zip file.
+* Copy the folder to the microSD card (used an microSD to SD adapter).
+
+First boot
+--------------
+
+* Insert the microSD card.
+* plug in the Mouse, Keyboard and hdmi.
+* Plug in the power with microUSB to start the first boot process.
+* A prompt appears to choose wifi network and enter password.
+* A window will appear with a list of different operating systems.
+* Choose Raspbian and click install, Raspian will install.
+* When the installation is complete click "ok".
+* Raspian GUI will start.
+
+Installing RPi Camera
+---------------------
+
+
