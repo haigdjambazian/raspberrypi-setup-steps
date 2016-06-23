@@ -136,4 +136,14 @@ First boot
 Installing RPi Camera
 ---------------------
 
+* Connect camera with flex cable (with RPi off)
+* Enable camera:
+```
+sudo raspi-config
+```
+* Select enable camera and hit Enter, Finish and it will reboot.
+* Capture a photo
+```
+raspistill -o cam.jpg
+```
 
