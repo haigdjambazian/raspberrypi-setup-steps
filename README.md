@@ -174,3 +174,30 @@ sudo apt-get update
 sudo apt-get install apache2 -y
 sudo apt-get install php5 libapache2-mod-php5 -y
 ```
+
+Script to copy to webserver
+---------------------------
+* Create the camera.sh file (contents below) and the ~/camera directory
+```
+#!/bin/bash
+
+DATE=$(date +"%Y-%m-%d_%H%M")
+
+# max image size 2592 x 1944
+
+# raspistill --nopreview -w 259 -h 194 -o /home/pi/camera/$DATE.jpg
+# raspistill --nopreview -o /home/pi/camera/$DATE.jpg
+raspistill --nopreview -w 518 -h 388 -o /home/pi/camera/$DATE.jpg
+
+rm /home/pi/camera/index.html  
+printf "<html>\n<head></head>\n<body>\n" >> /home/pi/camera/index.html  
+printf "Last 10 Minutes shown - Time now: $DATE<br>\n" >> /home/pi/camera/index.html  
+
+for img in $(ls -t /home/pi/camera/*.jpg | head -n 10); do
+  printf "<img src=\"$(basename $img)\" width=\"900\">\n" >> /home/pi/camera/index.html  
+done
+printf "</body>\n</html>\n" >> /home/pi/camera/index.html  
+
+sudo cp -r /home/pi/camera /var/www/html/
+```
+* cron job is already working (see above)
