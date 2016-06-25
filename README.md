@@ -202,12 +202,21 @@ sudo cp -r /home/pi/camera /var/www/html/
 ```
 * cron job is already working (see above)
 
-Packages to send email
+Packages to send email (SSMTP)
 ----------------------
 Following http://www.sbprojects.com/projects/raspberrypi/exim4.php
-* install this package
+* install these packages
 ```
-sudo apt-get install exim4
+sudo apt-get install ssmtp mailutils mpack
 ```
+* Edit /etc/ssmtp/ssmtp.conf
+```
+sudo nano /etc/ssmtp/ssmtp.conf
+```
+mailhub=smtp.gmail.com:587
+hostname=raspberrypi
+AuthUser=YOUR-RPi-ACCOUT@gmail.com
+AuthPass=REQUEST-GMAIL-PASSWORD-FOR-THIS-APP
+useSTARTTLS=YES
 * 
 
