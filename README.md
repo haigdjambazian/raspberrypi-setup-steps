@@ -201,3 +201,13 @@ printf "</body>\n</html>\n" >> /home/pi/camera/index.html
 sudo cp -r /home/pi/camera /var/www/html/
 ```
 * cron job is already working (see above)
+
+Packages to send email
+----------------------
+Following http://www.sbprojects.com/projects/raspberrypi/exim4.php
+* install this package
+```
+sudo apt-get install exim4
+```
+* 
+
