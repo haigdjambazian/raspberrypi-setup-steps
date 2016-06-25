@@ -247,7 +247,8 @@ sudo newaliases
 ```
 sudo chfn -f "pi @ domotics" pi
 ```
-* Test email from YOUR-RPi-ACCOUT@gmail.com to anyemail@gmail.com
+* Test email from YOUR-RPi-ACCOUT@gmail.com to ANYRECIPIENT@gmail.com
 ```
-echo "sample text" | mail -s "Important subject" anyemail@gmail.com
+echo "sample text" | mail -s "Important subject" ANYRECIPIENT@gmail.com
+mpack -s "Photo" camera/2016-06-24_1257.jpg ANYRECIPIENT@gmail.com
 ```
