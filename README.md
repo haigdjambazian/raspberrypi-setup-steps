@@ -213,10 +213,41 @@ sudo apt-get install ssmtp mailutils mpack
 ```
 sudo nano /etc/ssmtp/ssmtp.conf
 ```
+* Write the following in the file:
+```
 mailhub=smtp.gmail.com:587
 hostname=raspberrypi
 AuthUser=YOUR-RPi-ACCOUT@gmail.com
 AuthPass=REQUEST-GMAIL-PASSWORD-FOR-THIS-APP
 useSTARTTLS=YES
-* 
-
+```
+* Setup aliases in /etc/aliases
+```
+# /etc/aliases
+mailer-daemon: postmaster
+postmaster: root
+nobody: root
+hostmaster: root
+usenet: root
+news: root
+webmaster: root
+www: root
+ftp: root
+abuse: root
+noc: root
+security: root
+root: pi
+pi: YOUR-RPi-ACCOUT@gmail.com
+```
+* Then run:
+```
+sudo newaliases
+```
+* Setup full name for the user pi
+```
+sudo chfn -f "pi @ domotics" pi
+```
+* Test email from YOUR-RPi-ACCOUT@gmail.com to anyemail@gmail.com
+```
+echo "sample text" | mail -s "Important subject" anyemail@gmail.com
+```
