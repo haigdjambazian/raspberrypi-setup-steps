@@ -107,3 +107,18 @@ https://github.com/RetroPie/RetroPie-Setup/wiki/MAME
 * Place rom (galaga88.zip) in retropie/roms/advmames subfolder   
 * Play MAME>galaga88 
 
+Test 5: reset rpi password
+--------------------------
+
+* mount SD card on another computer
+* edit boot/cmdline.txt and add "single" at the end of the file
+* boot rpi with SD card and run these commands
+```
+su
+passwd pi # (choose new password)
+halt
+```
+* mount SD card on another computer again
+* remove "single"
+* boot rpi with SD card test new password
+
